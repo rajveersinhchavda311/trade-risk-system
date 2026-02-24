@@ -1,0 +1,25 @@
+# Ignore secrets and env files
+.env
+.env.*
+!.env.example
+
+# Git metadata
+.git
+.gitignore
+
+# Build output
+target/
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+
+# Docker files (don't need to be in the image)
+docker-compose.yml
+docker-compose.override.yml
+docker-compose.override.yaml
+
+# Docs
+*.md
+LICENSE

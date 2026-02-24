@@ -1,0 +1,97 @@
+### ======================== ###
+###   SECRETS & ENV FILES   ###
+### ======================== ###
+.env
+.env.local
+.env.*.local
+*.secret
+*.key
+*.pem
+
+### ======================== ###
+###    BUILD ARTIFACTS       ###
+### ======================== ###
+target/
+!**/src/main/**/target/
+!**/src/test/**/target/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+*.jar
+*.war
+*.ear
+*.class
+
+### ======================== ###
+###    MAVEN WRAPPER         ###
+### ======================== ###
+.mvn/wrapper/maven-wrapper.jar
+
+### ======================== ###
+###    LOGS                  ###
+### ======================== ###
+*.log
+logs/
+spring.log
+
+### ======================== ###
+###    IDE — IntelliJ IDEA   ###
+### ======================== ###
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+### ======================== ###
+###    IDE — Eclipse / STS   ###
+### ======================== ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+
+### ======================== ###
+###    IDE — VS Code         ###
+### ======================== ###
+.vscode/
+
+### ======================== ###
+###    IDE — NetBeans        ###
+### ======================== ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### ======================== ###
+###    DOCKER                ###
+### ======================== ###
+docker-compose.override.yml
+docker-compose.override.yaml
+.docker/
+
+### ======================== ###
+###    OS FILES              ###
+### ======================== ###
+.DS_Store
+Thumbs.db
+desktop.ini
+
+### ======================== ###
+###    NODE (if applicable)  ###
+### ======================== ###
+node_modules/
+package-lock.json
+
+### ======================== ###
+###    MISC                  ###
+### ======================== ###
+HELP.md
+*.swp
+*.swo
+*~

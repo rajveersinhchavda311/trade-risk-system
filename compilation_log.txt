@@ -1,0 +1,56 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< com:trade-risk-system >------------------------
+[INFO] Building trade-risk-system 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.4.1:clean (default-clean) @ trade-risk-system ---
+[INFO] Deleting C:\Users\rajveersinh chavda\Documents\trade-risk-system\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ trade-risk-system ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ trade-risk-system ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 42 source files with javac [debug parameters release 17] to target\classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/Users/rajveersinh chavda/Documents/trade-risk-system/src/main/java/com/trade_risk_system/controller/AuthController.java:[35,43] incompatible types: com.trade_risk_system.dto.response.UserResponseDTO cannot be converted to java.lang.String
+[ERROR] /C:/Users/rajveersinh chavda/Documents/trade-risk-system/src/main/java/com/trade_risk_system/controller/RiskController.java:[23,45] cannot find symbol
+  symbol:   method getRiskMetrics(java.lang.Long)
+  location: variable riskService of type com.trade_risk_system.service.RiskService
+[ERROR] /C:/Users/rajveersinh chavda/Documents/trade-risk-system/src/main/java/com/trade_risk_system/controller/TradeController.java:[30,49] cannot find symbol
+  symbol:   method createTrade(@jakarta.validation.Valid com.trade_risk_system.dto.request.TradeRequestDTO)
+  location: variable tradeService of type com.trade_risk_system.service.TradeService
+[ERROR] /C:/Users/rajveersinh chavda/Documents/trade-risk-system/src/main/java/com/trade_risk_system/controller/TradeController.java:[36,46] cannot find symbol
+  symbol:   method getTradesByPortfolio(java.lang.Long)
+  location: variable tradeService of type com.trade_risk_system.service.TradeService
+[INFO] 4 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.506 s
+[INFO] Finished at: 2026-02-19T12:38:29+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.14.1:compile (default-compile) on project trade-risk-system: Compilation failure: Compilation failure: 
+[ERROR] /C:/Users/rajveersinh chavda/Documents/trade-risk-system/src/main/java/com/trade_risk_system/controller/AuthController.java:[35,43] incompatible types: com.trade_risk_system.dto.response.UserResponseDTO cannot be converted to java.lang.String
+[ERROR] /C:/Users/rajveersinh chavda/Documents/trade-risk-system/src/main/java/com/trade_risk_system/controller/RiskController.java:[23,45] cannot find symbol
+[ERROR]   symbol:   method getRiskMetrics(java.lang.Long)
+[ERROR]   location: variable riskService of type com.trade_risk_system.service.RiskService
+[ERROR] /C:/Users/rajveersinh chavda/Documents/trade-risk-system/src/main/java/com/trade_risk_system/controller/TradeController.java:[30,49] cannot find symbol
+[ERROR]   symbol:   method createTrade(@jakarta.validation.Valid com.trade_risk_system.dto.request.TradeRequestDTO)
+[ERROR]   location: variable tradeService of type com.trade_risk_system.service.TradeService
+[ERROR] /C:/Users/rajveersinh chavda/Documents/trade-risk-system/src/main/java/com/trade_risk_system/controller/TradeController.java:[36,46] cannot find symbol
+[ERROR]   symbol:   method getTradesByPortfolio(java.lang.Long)
+[ERROR]   location: variable tradeService of type com.trade_risk_system.service.TradeService
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
